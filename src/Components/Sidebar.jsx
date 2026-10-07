@@ -2,10 +2,10 @@ import React from 'react'
 
 function Sidebar() {
     return (
-        <aside className='w-65 border-r px-5 py-3 h-auto'>
+        <aside className='w-65 border-r px-2 py-3 h-auto flex flex-col  '>
             <nav className='flex flex-col items-center'>
-                <a className='w-full flex h-[74px] items-center px-4' href="/">
-                    <div>
+                <a className='w-full group flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
+                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
                         <svg
                             width="24"
                             height="24"
@@ -62,10 +62,10 @@ function Sidebar() {
                             />
                         </svg>
                     </div>
-                    <h2>Dashboard</h2>
+                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Dashboard</h2>
                 </a>
-                <a className='w-full flex h-[74px] items-center px-4' href="/">
-                    <div className='w-6 h-6'>
+                <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
+                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
                         <svg
                             width="24"
                             height="24"
@@ -109,10 +109,10 @@ function Sidebar() {
                             />
                         </svg>
                     </div>
-                    <h2>Applications</h2>
+                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Applications</h2>
                 </a>
-                <a className='w-full flex h-[74px] items-center px-4' href="/">
-                    <div className='w-6 h-6'>
+                <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
+                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
                         <svg
                             width="24"
                             height="24"
@@ -129,10 +129,10 @@ function Sidebar() {
                             />
                         </svg>
                     </div>
-                    <h2>Saved Jobs</h2>
+                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Saved Jobs</h2>
                 </a>
-                <a className='w-full flex h-[74px] items-center px-4' href="">
-                    <div className='w-6 h-6'>
+                <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="">
+                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
                         <svg
                             width="24"
                             height="24"
@@ -162,10 +162,10 @@ function Sidebar() {
                             />
                         </svg>
                     </div>
-                    <h2>Analytics</h2>
+                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Analytics</h2>
                 </a>
-                <a className='w-full flex h-[74px] items-center px-4' href="/">
-                    <div className='w-6 h-6'>
+                <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
+                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
                         <svg
                             width="24"
                             height="24"
@@ -188,7 +188,7 @@ function Sidebar() {
                             />
                         </svg>
                     </div>
-                    <h2>Settings</h2>
+                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Settings</h2>
                 </a>
             </nav>
         </aside>
