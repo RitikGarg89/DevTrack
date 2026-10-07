@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
 import Sidebar from './Components/Sidebar'
+import DashBoard from './Pages/DashBoard';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Sidebar />
       <main className='flex-1'>
         <Navbar />
+        <DashBoard />
       </main>
     </div>
   )
