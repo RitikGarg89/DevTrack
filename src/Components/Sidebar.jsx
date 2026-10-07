@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sidebar() {
     return (
-        <aside className='w-65 border-r py-3 h-screen flex flex-col justify-between'>
+        <aside className='w-65 shadow-[5px_0_10px_-3px_rgba(0,0,0,0.1)] border-r border-gray-400 py-3 h-screen flex flex-col justify-between bg-white'>
             <div className='flex flex-col'>{/* Logo */}
                 <div>
                     <h1 className="text-xl my-2 px-6 font-bold">Dev<span className='text-purple-500'>Track</span></h1>

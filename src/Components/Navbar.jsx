@@ -6,7 +6,7 @@ function Navbar() {
     const [logedIn, setLogedIn] = useState(false);
 
     return (
-        <nav className="flex items-center justify-between border-b px-5 py-3">
+        <nav className="flex items-center justify-between  shadow-[0_4px_10px_-4px_rgba(0,0,0,0.1)] px-5 py-3 border-b border-gray-400 bg-white">
             {/* Search */}
             <div
                 className='flex h-10 w-[320px] items-center gap-3 rounded-lg border px-3 focus-within:border-gray-500'
