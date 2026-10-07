@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from './Components/Navbar'
+import Sidebar from './Components/Sidebar'
 
 function App() {
   return (
-    <div>App</div>
+    <>
+      <Navbar />
+      <Sidebar />
+    </>
   )
 }
 
-export default App
+export default App;
