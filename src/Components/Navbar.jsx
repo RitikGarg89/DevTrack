@@ -3,13 +3,10 @@ import React, { useState } from 'react'
 function Navbar() {
 
     const [search, setSearch] = useState('');
+    const [logedIn, setLogedIn] = useState(false);
 
     return (
         <nav className="flex items-center justify-between border-b px-5 py-3">
-            {/* Logo */}
-            <div>
-                <h1 className="text-xl font-bold">DevTrack</h1>
-            </div>
             {/* Search */}
             <div
                 className='flex h-10 w-[320px] items-center gap-3 rounded-lg border px-3 focus-within:border-gray-500'
@@ -33,7 +30,7 @@ function Navbar() {
                 </div>
                 <input
                     className='flex-1 outline-none'
-                    type="text"
+                    type="Search"
                     placeholder='Search'
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
@@ -64,9 +61,18 @@ function Navbar() {
                         />
                     </svg>
                 </div>
-                <button>Profile</button>
+                {logedIn ? (
+                    <div className='flex items-center w-fit mx-2 px-1 rounded-xl gap-2 border border-gray-300'>
+                        <img className='rounded-full' src="https://placehold.co/40x40" width={40} height={40} alt="profilepic" />
+                        <h2 className='text-gray-700 font-semibold'>Username</h2>
+                    </div>
+                ) : (
+                    <button className='flex items-center justify-center w-fit mx-2 px-6 py-2 rounded-lg bg-indigo-500 text-white font-semibold hover:bg-indigo-600 transition-colors duration-150'>
+                        <span>Login</span>
+                    </button>
+                )}
             </div>
-        </nav>
+        </nav >
     );
 }
 

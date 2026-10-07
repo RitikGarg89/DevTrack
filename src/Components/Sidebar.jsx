@@ -2,195 +2,227 @@ import React from 'react'
 
 function Sidebar() {
     return (
-        <aside className='w-65 border-r px-2 py-3 h-auto flex flex-col  '>
-            <nav className='flex flex-col items-center'>
-                <a className='w-full group flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
-                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
+        <aside className='w-65 border-r py-3 h-screen flex flex-col justify-between'>
+            <div className='flex flex-col'>{/* Logo */}
+                <div>
+                    <h1 className="text-xl my-2 px-6 font-bold">Dev<span className='text-purple-500'>Track</span></h1>
+                </div>
+                <hr className='border-gray-500 my-2' />
+                {/* Navigation */}
+                <nav className='flex flex-col items-center mx-2'>
+                    <a className='w-full group flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
+                        <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="7"
+                                    height="7"
+                                    rx="1"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+
+                                <rect
+                                    x="14"
+                                    y="3"
+                                    width="7"
+                                    height="7"
+                                    rx="1"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+
+                                <rect
+                                    x="3"
+                                    y="14"
+                                    width="7"
+                                    height="7"
+                                    rx="1"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+
+                                <rect
+                                    x="14"
+                                    y="14"
+                                    width="7"
+                                    height="7"
+                                    rx="1"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Dashboard</h2>
+                    </a>
+                    <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
+                        <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect
+                                    x="3"
+                                    y="7"
+                                    width="18"
+                                    height="14"
+                                    rx="2"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+
+                                <path
+                                    d="M8 7V5C8 3.89543 8.89543 3 10 3H14C15.1046 3 16 3.89543 16 5V7"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+
+                                <path
+                                    d="M3 12H21"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                />
+
+                                <path
+                                    d="M10 12V14H14V12"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Applications</h2>
+                    </a>
+                    <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
+                        <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6 4C6 2.89543 6.89543 2 8 2H16C17.1046 2 18 2.89543 18 4V21L12 17.5L6 21V4Z"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Saved Jobs</h2>
+                    </a>
+                    <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="">
+                        <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M5 20V14"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                />
+
+                                <path
+                                    d="M12 20V5"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                />
+
+                                <path
+                                    d="M19 20V9"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                />
+                            </svg>
+                        </div>
+                        <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Analytics</h2>
+                    </a>
+                    <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
+                        <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                />
+
+                                <path
+                                    d="M19.4 15C19.5 14.7 19.7 14.4 19.8 14.1L21 13L19.5 10.5L17.9 10.9C17.5 10.5 17.1 10.2 16.6 10L16.4 8.3L13.5 7.5L12.5 8.9C12.3 8.9 12.1 8.9 12 8.9C11.8 8.9 11.6 8.9 11.4 8.9L10.4 7.5L7.5 8.3L7.3 10C6.8 10.2 6.4 10.5 6 10.9L4.4 10.5L3 13L4.2 14.1C4.3 14.4 4.5 14.7 4.6 15L4.2 16.6L6.7 18L8 17C8.4 17.2 8.8 17.4 9.3 17.5L9.8 19.2H14.2L14.7 17.5C15.2 17.4 15.6 17.2 16 17L17.3 18L19.8 16.6L19.4 15Z"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Settings</h2>
+                    </a>
+                </nav>
+            </div>
+            <div>
+                <button className='flex items-center justify-center w-61 gap-2 h-[48px] rounded-lg bg-indigo-500 text-white font-semibold hover:bg-indigo-600 transition-colors duration-150 mx-2'>
+                    <div className='w-5 h-5'>
                         <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
                             fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <rect
-                                x="3"
-                                y="3"
-                                width="7"
-                                height="7"
-                                rx="1"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 4V16M4 10H16"
                                 stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-
-                            <rect
-                                x="14"
-                                y="3"
-                                width="7"
-                                height="7"
-                                rx="1"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-
-                            <rect
-                                x="3"
-                                y="14"
-                                width="7"
-                                height="7"
-                                rx="1"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-
-                            <rect
-                                x="14"
-                                y="14"
-                                width="7"
-                                height="7"
-                                rx="1"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
+                                stroke-width="2"
+                                stroke-linecap="round"
                             />
                         </svg>
                     </div>
-                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Dashboard</h2>
-                </a>
-                <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
-                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <rect
-                                x="3"
-                                y="7"
-                                width="18"
-                                height="14"
-                                rx="2"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-
-                            <path
-                                d="M8 7V5C8 3.89543 8.89543 3 10 3H14C15.1046 3 16 3.89543 16 5V7"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-
-                            <path
-                                d="M3 12H21"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                            />
-
-                            <path
-                                d="M10 12V14H14V12"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
-                    </div>
-                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Applications</h2>
-                </a>
-                <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
-                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M6 4C6 2.89543 6.89543 2 8 2H16C17.1046 2 18 2.89543 18 4V21L12 17.5L6 21V4Z"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
-                    </div>
-                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Saved Jobs</h2>
-                </a>
-                <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="">
-                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M5 20V14"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                            />
-
-                            <path
-                                d="M12 20V5"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                            />
-
-                            <path
-                                d="M19 20V9"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                            />
-                        </svg>
-                    </div>
-                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Analytics</h2>
-                </a>
-                <a className='w-full flex h-[48px] items-center px-2 rounded-xl hover:bg-purple-200' href="/">
-                    <div className='w-6 h-6 mx-3 group-hover:black duration-150 transition-colors'>
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                            />
-
-                            <path
-                                d="M19.4 15C19.5 14.7 19.7 14.4 19.8 14.1L21 13L19.5 10.5L17.9 10.9C17.5 10.5 17.1 10.2 16.6 10L16.4 8.3L13.5 7.5L12.5 8.9C12.3 8.9 12.1 8.9 12 8.9C11.8 8.9 11.6 8.9 11.4 8.9L10.4 7.5L7.5 8.3L7.3 10C6.8 10.2 6.4 10.5 6 10.9L4.4 10.5L3 13L4.2 14.1C4.3 14.4 4.5 14.7 4.6 15L4.2 16.6L6.7 18L8 17C8.4 17.2 8.8 17.4 9.3 17.5L9.8 19.2H14.2L14.7 17.5C15.2 17.4 15.6 17.2 16 17L17.3 18L19.8 16.6L19.4 15Z"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
-                    </div>
-                    <h2 className='text-gray-700 font-semibold duration-150 transition-colors group-hover:text-black'>Settings</h2>
-                </a>
-            </nav>
+                    <span>Application</span>
+                </button>
+                <hr className='border-gray-500 my-2' />
+                <div className='flex items-center gap-4 mx-4'>
+                    <img className='rounded-full' src="https://placehold.co/40x40" width={40} height={40} alt="profilepic" />
+                    <h2 className='text-gray-700 font-semibold'>Username</h2>
+                </div>
+            </div>
         </aside>
     )
 }

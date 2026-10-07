@@ -4,10 +4,12 @@ import Sidebar from './Components/Sidebar'
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <div className='flex'>
       <Sidebar />
-    </>
+      <main className='flex-1'>
+        <Navbar />
+      </main>
+    </div>
   )
 }
 
