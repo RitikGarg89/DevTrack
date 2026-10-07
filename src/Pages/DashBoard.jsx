@@ -78,7 +78,12 @@ function DashBoard() {
                     )
                 })}
             </div>
-            <ApplicationChart />
+            <div className='flex my-8 justify-center items-center gap-10'>
+                <div className='p-4 bg-white w-full rounded-2xl shadow-lg flex-2 shadow-black/30'>
+                    <ApplicationChart />
+                </div>
+                <div className='p-4 bg-white w-full rounded-2xl shadow-lg flex-1 shadow-black/30'></div>
+            </div>
         </>
     )
 }
