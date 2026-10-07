@@ -1,4 +1,13 @@
 import React from 'react'
+import {
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    ResponsiveContainer,
+} from "recharts";
 
 function ApplicationChart() {
     const stages = [
@@ -12,44 +21,49 @@ function ApplicationChart() {
     const maxValue = 60;
 
     return (
-        <div className="bg-transparent flex w-full items-center ">
-
-            {/* Y-axis */}
-            <div className="mb-2 gap-4 flex flex-col justify-between text-xs text-slate-400">
-                <span>60</span>
-                <span>45</span>
-                <span>30</span>
-                <span>15</span>
-                <span>0</span>
-            </div>
-
-            {/* Chart */}
-            <div className="flex h-48 items-end justify-around border-b border-slate-200">
-
-                {stages.map((stage) => (
-                    <div
-                        key={stage.name}
-                        className="flex h-full flex-col items-center justify-end"
+        <>
+            <h3>Application Overview</h3>
+            <p>Application across stages</p>
+            <div className="h-[300px] w-full">
+                <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                        data={stages}
+                        margin={{
+                            top: 20,
+                            right: 10,
+                            left: 0,
+                            bottom: 10,
+                        }}
                     >
-
-                        {/* Bar */}
-                        <div
-                            className="w-12 rounded-t bg-indigo-500"
-                            style={{
-                                height: `${(stage.value / maxValue) * 100}%`,
-                            }}
+                        <CartesianGrid
+                            strokeDasharray="3 3"
+                            vertical={false}
                         />
 
-                        {/* Label */}
-                        <span className="mt-2 text-xs text-slate-500">
-                            {stage.name}
-                        </span>
+                        <XAxis
+                            dataKey="name"
+                            axisLine={false}
+                            tickLine={false}
+                        />
 
-                    </div>
-                ))}
+                        <YAxis
+                            domain={[0, 60]}
+                            axisLine={false}
+                            tickLine={false}
+                        />
 
+                        <Tooltip />
+
+                        <Bar
+                            dataKey="applications"
+                            fill="#6366f1"
+                            radius={[4, 4, 0, 0]}
+                            barSize={48}
+                        />
+                    </BarChart>
+                </ResponsiveContainer>
             </div>
-        </div>
+        </>
     );
 }
 
