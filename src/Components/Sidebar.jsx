@@ -65,7 +65,7 @@ function Sidebar() {
                     <h2>Dashboard</h2>
                 </a>
                 <a className='w-full flex h-[74px] items-center px-4' href="/">
-                    <div className='w-10 h-10'>
+                    <div className='w-6 h-6'>
                         <svg
                             width="24"
                             height="24"
@@ -112,7 +112,7 @@ function Sidebar() {
                     <h2>Applications</h2>
                 </a>
                 <a className='w-full flex h-[74px] items-center px-4' href="/">
-                    <div className='w-10 h-10'>
+                    <div className='w-6 h-6'>
                         <svg
                             width="24"
                             height="24"
@@ -132,7 +132,7 @@ function Sidebar() {
                     <h2>Saved Jobs</h2>
                 </a>
                 <a className='w-full flex h-[74px] items-center px-4' href="">
-                    <div className='w-10 h-10'>
+                    <div className='w-6 h-6'>
                         <svg
                             width="24"
                             height="24"
@@ -165,7 +165,7 @@ function Sidebar() {
                     <h2>Analytics</h2>
                 </a>
                 <a className='w-full flex h-[74px] items-center px-4' href="/">
-                    <div className='w-10 h-10'>
+                    <div className='w-6 h-6'>
                         <svg
                             width="24"
                             height="24"
