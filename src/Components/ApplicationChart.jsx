@@ -10,7 +10,7 @@ import {
 } from "recharts";
 
 function ApplicationChart() {
-    const stages = [
+    const data = [
         { name: "Applied", value: 42 },
         { name: "Screening", value: 18 },
         { name: "Interview", value: 8 },
@@ -18,48 +18,33 @@ function ApplicationChart() {
         { name: "Rejected", value: 14 },
     ];
 
-    const maxValue = 60;
-
     return (
         <>
-            <h3>Application Overview</h3>
-            <p>Application across stages</p>
+            <h3 className='text-gray-700 font-semibold text-xl mb-2'>Application Overview</h3>
+            <p className='text-gray-600 font-semibold mb-6'>Application across stages</p>
             <div className="h-[300px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
-                    <BarChart
-                        data={stages}
-                        margin={{
-                            top: 20,
-                            right: 10,
-                            left: 0,
-                            bottom: 10,
-                        }}
-                    >
-                        <CartesianGrid
-                            strokeDasharray="3 3"
-                            vertical={false}
-                        />
+                    <BarChart data={data}>
 
-                        <XAxis
-                            dataKey="name"
-                            axisLine={false}
-                            tickLine={false}
-                        />
+                        <XAxis dataKey="name" />
 
-                        <YAxis
-                            domain={[0, 60]}
-                            axisLine={false}
-                            tickLine={false}
-                        />
+                        <YAxis />
 
-                        <Tooltip />
+                        <Tooltip
+                            contentStyle={{
+                                backgroundColor: "#ffffff",
+                                border: "1px solid #e2e8f0",
+                                borderRadius: "8px",
+                                padding: "10px 14px",
+                                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
+                            }}
+                        />
 
                         <Bar
-                            dataKey="applications"
+                            dataKey="value"
                             fill="#6366f1"
-                            radius={[4, 4, 0, 0]}
-                            barSize={48}
                         />
+
                     </BarChart>
                 </ResponsiveContainer>
             </div>

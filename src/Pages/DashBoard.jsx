@@ -1,6 +1,7 @@
 import React from 'react'
 import StatCard from '../Components/StatCard'
 import ApplicationChart from '../Components/ApplicationChart';
+import PipelineStatus from '../Components/PipeLineStatus';
 
 function DashBoard() {
     const stats = [
@@ -54,8 +55,8 @@ function DashBoard() {
                                 <path
                                     d="M10 4V16M4 10H16"
                                     stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
                                 />
                             </svg>
                         </div>
@@ -78,11 +79,13 @@ function DashBoard() {
                     )
                 })}
             </div>
-            <div className='flex my-8 justify-center items-center gap-10'>
+            <div className='flex my-8 justify-center items-stretch gap-10'>
                 <div className='p-4 bg-white w-full rounded-2xl shadow-lg flex-2 shadow-black/30'>
                     <ApplicationChart />
                 </div>
-                <div className='p-4 bg-white w-full rounded-2xl shadow-lg flex-1 shadow-black/30'></div>
+                <div className='p-4 bg-white w-full rounded-2xl shadow-lg flex-1 shadow-black/30'>
+                    <PipelineStatus />
+                </div>
             </div>
         </>
     )

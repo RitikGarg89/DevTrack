@@ -210,8 +210,8 @@ function Sidebar() {
                             <path
                                 d="M10 4V16M4 10H16"
                                 stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
+                                strokeWidth="2"
+                                strokeLinecap="round"
                             />
                         </svg>
                     </div>
